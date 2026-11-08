@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+  --vivid-indigo: rgb(97, 94, 253);
+  --purple: rgb(86, 39, 217);
+  --green: rgb(51,187,65);
+  --dark-green: rgb(22,147,35);
+  --dark: rgb(42,40,50);
+  --red: rgb(172,28,28);
+  --dark-red: rgb(75,7,7);
+  --base: rgb(54,54,54);
+  --yellow: rgb(197,179,66);
+  --dark-yellow: rgb(197,179,22)
+}
+div[base='flex'] {
+  background: var(--base)
+}
+body {
+  font-family: "Iosevka Charon", monospace;
+  background-image: linear-gradient(45deg, #0B486B, #C34200);
+  height: 100vh;
+  overflow: hidden;
+  overscroll-behavior: hidden;
+}
+.logo {
+  width: 100px
+}
+.server-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  padding: 2px;
+  gap: 2px;
+  border-radius: 5px;
+  background: black;
+  outline: 2px solid var(--vivid-indigo)
+}
+p, .chat, span {
+  color: white;
+  font-size: 10px
+}
+.dm {
+  background-color: var(--vivid-indigo);
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-family: "Iosevka Charon", monospace;
+  margin-bottom: 10px;
+}
+.server-logo {
+  width: 30px;
+  border-radius: 2px
+}
+.flexbox-side {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient( #7863d4, #d4b963);
+  gap: 4px;
+  padding: 4px;
+  border-radius: 4px;
+  width: calc(100vw - 25px);
+  height: calc(100vh - 130px)
+}
+.dm:active { 
+  animation: active 0.2s ease-out forwards 
+}
+.dm:not(:active) {
+  animation: notactive 0.2s ease-out forwards
+}
+.name {
+  padding: 5px;
+  background: linear-gradient(90deg, var(--purple), var(--vivid-indigo), var(--purple));
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500px;
+  margin-bottom: 5px;
+}
+.default {
+  background-color: var(--vivid-indigo);
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  padding: 10px;
+  font-family: "Iosevka Charon", monospace;
+  margin-bottom: 10px;
+}
+.default:active { 
+  animation: active 0.2s ease-out forwards 
+}
+.default:not(:active) {
+  animation: notactive 0.2s ease-out forwards
+}
+
+@keyframes active { 
+  0% {
+    
+  } 
+  100% { 
+    background: rgb(97, 89, 239); border-radius: 9px 
+  } 
+}
+@keyframes notactive { 
+  0% {
+    background: rgb(94, 92, 239); border-radius: 9px 
+  } 
+  100% {
+  } 
+}
+@keyframes fade-out {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
