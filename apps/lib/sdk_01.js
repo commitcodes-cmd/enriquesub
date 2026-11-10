@@ -22,6 +22,9 @@ class APIConfig {
     this.#appVersion = appVersion
     this.#apiVersion = apiVersion
   }
+  init(link) {
+    this.link = fetch(link)
+  }
   get appVersion() { return this.#appVersion }
   get apiVersion() { return this.#apiVersion }
 }
