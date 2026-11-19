@@ -9,7 +9,9 @@
   --dark-red: rgb(75,7,7);
   --base: rgb(54,54,54);
   --yellow: rgb(197,179,66);
-  --dark-yellow: rgb(197,179,22)
+  --dark-yellow: rgb(197,179,22);
+  --blue-oceanic: rgb(11,72,107);
+  --orange: rgb(195,66,0)
 }
 div[base='flex'] {
   background: var(--base)
@@ -17,8 +19,8 @@ div[base='flex'] {
 body {
   font-family: "Iosevka Charon", monospace;
   background-image: linear-gradient(45deg, #0B486B, #C34200);
-  height: 100vh;
-  overflow: hidden;
+  height: 100dvh;
+  overflow-y: hidden;
   overscroll-behavior: hidden;
 }
 .logo {
@@ -54,12 +56,9 @@ p, .chat, span {
 .flexbox-side {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient( #7863d4, #d4b963);
   gap: 4px;
-  padding: 4px;
-  border-radius: 4px;
-  width: calc(100vw - 25px);
-  height: calc(100vh - 130px)
+  width: 95dvw;
+  height: 97dvh
 }
 .dm:active { 
   animation: active 0.2s ease-out forwards 
