@@ -8,6 +8,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5725490196078431);
   position: absolute;
   left: 50%;
+  bottom: 50%;
   width: 10%;
   height: 10%
 }
