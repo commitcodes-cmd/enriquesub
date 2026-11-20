@@ -6,7 +6,7 @@ body {
 .san-list {
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.5725490196078431);
-  position: center;
+  position: absolute;
   width: 10%;
   height: 10%
 }
