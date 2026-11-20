@@ -2,6 +2,7 @@ body {
   background-image: url("https://pics.freeartbackgrounds.com/fullhd/Forest_Background-879.jpg");
   height: 100vh;
   width: 100vw;
+  color: white
 }
 .san-list {
   overflow-y: auto;
@@ -9,6 +10,6 @@ body {
   position: absolute;
   left: 50%;
   bottom: 50%;
-  width: 10%;
+  width: 60%;
   height: 10%
 }
