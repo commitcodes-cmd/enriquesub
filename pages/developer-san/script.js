@@ -5,8 +5,3 @@ function log(msg) {
   p.textContent = msg
   san.appendChild(p)
 }
-log("start.")
-const date = new Date()
-for (let i; i < 1000000; i++) {
-  setInterval(() => { log(date.toLocaleTimeString())}, 500)
-}
