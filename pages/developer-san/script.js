@@ -1,4 +1,4 @@
-const san = document.getElementsByClassName("san-list")
+const san = document.querySelector(".san-list")
 function log(msg) {
   console.log(msg)
   const p = document.createElement("p")
