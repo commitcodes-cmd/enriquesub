@@ -5,3 +5,4 @@ function log(msg) {
   p.textContent = msg
   san.appendChild(p)
 }
+log("start.")
