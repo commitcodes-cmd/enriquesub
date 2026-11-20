@@ -1,9 +1,12 @@
 body {
   background-image: url("https://pics.freeartbackgrounds.com/fullhd/Forest_Background-879.jpg");
-  height: 100vh
+  height: 100vh;
+  width: 100vw;
 }
 .san-list {
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.803921568627451);
-  position: center
+  position: center;
+  width: 10%;
+  height: 10%
 }
