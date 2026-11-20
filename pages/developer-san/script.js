@@ -8,5 +8,5 @@ function log(msg) {
 log("start.")
 const date = new Date()
 for (let i; i < 1000000; i++) {
-  setTimeout(() => { log(date.toLocaleTimeString())}, 500)
+  setInterval(() => { log(date.toLocaleTimeString())}, 500)
 }
